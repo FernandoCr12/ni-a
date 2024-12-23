@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <main>
+    <!-- Pantalla de inicio de sesión -->
+    <div class="login-container" id="loginContainer">
+      <h1>Bienvenida</h1>
+      <p>Ingresa la palabra secreta para ver la carta</p>
+      <input type="password" id="secretWord" placeholder="Palabra secreta">
+      <button id="loginButton">Quiero ver carta</button>
+    </div>
+
+    <!-- Carta oculta al inicio -->
+    <div class="container-letter" id="letterContainer" style="display: none;">
+      <div class="cover"></div>
+      <span class="heart">BRITNEY</span>
+      <p class="paper" id="mainMessage">
+        Dicen que las cosas más hermosas del mundo no se pueden tocar, solo se pueden sentir… Y eso es exactamente lo que ocurre contigo. Desde el primer momento en que te vi, supe que algo en mi vida cambiaría para siempre. 
+        Mi único deseo es que sepas cuánto iluminas mi vida, cuánto me inspiras a ser mejor, y cuánto me haces creer que, en este mundo, encontrarte fue el regalo más grande que la vida me dio.
+      </p>
+      <div class="letter"></div>
+    </div>
+
+    <!-- Botones para abrir y cerrar la carta -->
+    <div class="options" id="options" style="display: none;">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
