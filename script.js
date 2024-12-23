@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginContainer = document.querySelector('#loginContainer');
   const letterContainer = document.querySelector('#letterContainer');
   const optionsContainer = document.querySelector('#options');
-  const correctPassword = "niña";
+  const correctPassword = "miamor";
 
   // Validar palabra secreta
   loginButton.addEventListener('click', () => {
